@@ -1,3 +1,5 @@
+$_grid_gutter: 30px !default;
+
 @mixin _grid_before_after_table() {
   &:before,
   &:after {

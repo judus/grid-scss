@@ -1,0 +1,26 @@
+{
+  "name": "grid-scss",
+  "version": "1.0.0",
+  "description": "Mixins for CSS grids",
+  "main": "src",
+  "keywords": [
+    "scss",
+    "sass",
+    "css",
+    "grid",
+    "column"
+  ],
+  "author": "Julien Duseyau",
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "readmeFilename": "README.md",
+  "_from": "grid-scss@*",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/judus/grid-scss.git"
+  }
+}

@@ -40,6 +40,7 @@ $_grid_gutter: 30px !default;
 
 @mixin grid-row() {
 	@include _grid_negative_margins;
+	@include _grid_before_after_table;
 	@include _grid_after_clear_both;
 }
 

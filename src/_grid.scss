@@ -1,50 +1,53 @@
 $_grid_gutter: 30px !default;
 
 @mixin _grid_before_after_table() {
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
 }
 
 @mixin _grid_after_clear_both() {
-  &:after {
-    clear: both;
-  }
+	&:after {
+		clear: both;
+	}
 }
 
 @mixin _grid_horizontal_pad() {
-  padding-left: $_grid_gutter / 2;
-  padding-right: $_grid_gutter / 2;
+	padding-left: $_grid_gutter / 2;
+	padding-right: $_grid_gutter / 2;
 }
 
 @mixin _grid_negative_margins() {
-  margin-left: ($_grid_gutter / 2) * -1;
-  margin-right: ($_grid_gutter / 2) * -1;
+	margin-left: ($_grid_gutter / 2) * -1;
+	margin-right: ($_grid_gutter / 2) * -1;
 }
 
 @mixin grid-flex() {
-  @include _grid_after_clear_both;
-  @include _grid_negative_margins;
-  display: flex;
+	@include _grid_after_clear_both;
+	@include _grid_negative_margins;
+	display: flex;
+	flex-flow: row wrap;
 }
 
 @mixin grid-container() {
-  @include _grid_horizontal_pad;
-  @include _grid_after_clear_both;
-  margin-left: auto;
-  margin-right: auto;
+	@include _grid_horizontal_pad;
+	@include _grid_after_clear_both;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @mixin grid-row() {
-  @include _grid_negative_margins;
-  @include _grid_after_clear_both;
+	@include _grid_negative_margins;
+	@include _grid_after_clear_both;
 }
 
 @mixin grid-col($width: 50%) {
-  @include _grid_horizontal_pad;
-  min-height: 1px;
-  float: left;
-  width: $width;
+	@include _grid_horizontal_pad;
+	flex-grow: 0;
+	flex-shrink: 0;
+	min-height: 1px;
+	float: left;
+	width: $width;
 }

@@ -1,6 +1,6 @@
 {
   "name": "maduser-grid-scss",
-§  "version": "1.0.4",
+  "version": "1.0.4",
   "description": "Mixins for CSS grids",
   "main": "src",
   "keywords": [

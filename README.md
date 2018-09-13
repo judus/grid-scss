@@ -1,8 +1,12 @@
 # grid-scss
 Some helper mixins for CSS grids
 
-#### Using flex-box:
+#### Install npm
+```text
+npm i maduser-grid-scss
+```
 
+#### Using flex-box:
 4 columns of equal size with children elements 
 ```scss
   .container {
@@ -30,7 +34,6 @@ Some helper mixins for CSS grids
 ```
 
 #### Using rows and cols, no flex:
-
 6 columns of equal size
 ```scss
   .container {

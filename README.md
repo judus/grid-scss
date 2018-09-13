@@ -1,5 +1,5 @@
 # grid-scss
-Some helper mixins for CSS grids
+Mixins for CSS grids
 
 #### Install npm
 ```text

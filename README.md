@@ -45,6 +45,6 @@ npm i maduser-grid-scss
   }
 
   .column {
-    @include grid-col(16.6666);
+    @include grid-col(16.6666%);
   }
 ```
